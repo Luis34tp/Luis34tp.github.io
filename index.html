@@ -9,37 +9,58 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f4f4f4;
+            background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             text-align: center;
         }
 
         .container {
             max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
+            padding: 30px;
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 20px;
         }
 
         p {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
             line-height: 1.6;
         }
 
-        @media (max-width: 600px) {
+        .boton {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #0056b3;
+        }
+
+        /* Celular */
+        @media (max-width: 768px) {
             h1 {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
             }
 
             p {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
 
-            .container {
-                padding: 30px 15px;
+            .boton {
+                font-size: 1.1rem;
+                padding: 14px 25px;
             }
         }
     </style>
@@ -49,9 +70,11 @@
     <div class="container">
         <h1>Productos Populares 2026</h1>
         <p>
-            Análisis de productos populares con enlaces directos de compra 
-            en Amazon, Mercado Libre, AliExpress y más.
+            Análisis de productos populares con enlaces directos 
+            de compra en Amazon, Mercado Libre y AliExpress.
         </p>
+
+        <a href="#" class="boton">Ver Productos 🔥</a>
     </div>
 
 </body>
